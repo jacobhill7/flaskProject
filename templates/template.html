@@ -41,24 +41,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/todo">Web App - Todo</a>
                 </li>
-                {% if user.is_anonymous %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/register">Registration</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login">Login</a>
-                    </li>
-                {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/logout">Logout</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/reset_password">Reset Password</a>
-                    </li>
-                {% endif %}
+
             </ul>
         </div>
-        <div style="color:white">{{ user.name }}</div>
+
+
         <img class="img-fluid" src="/static/images/NgunnawalCountryBanner.png">
 
     </div>
